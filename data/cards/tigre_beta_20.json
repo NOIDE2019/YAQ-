@@ -93,7 +93,7 @@
       "theme": "gastronomia",
       "subcategory": "Salida simple",
       "name": "Café & algo rico",
-      "priceTier": "$",
+      "priceTier": "$$",
       "includes": [
         "Café",
         "Dulce/medialuna",
@@ -101,7 +101,7 @@
       ],
       "why": "Plan cortito que te acomoda la cabeza.",
       "closeType": "redirect",
-      "closeUrl": "https://example.com/close/TIG-GAS-SAL-02",
+      "closeUrl": "https://www.pedidosya.com.ar/restaurantes/buenos-aires/starbucks-caesar-menu?origin=shop_list",
       "planB": "TIG-GAS-CAS-02",
       "tags": [
         "tranqui",
