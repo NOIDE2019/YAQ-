@@ -9,7 +9,11 @@
       "subcategory": "Delivery resuelto",
       "name": "Como lo hace mamá 😋",
       "priceTier": "$$",
-      "includes": ["Plato principal potente", "Bebida incluida", "Postre simple"],
+      "includes": [
+        "Plato principal potente",
+        "Bebida incluida",
+        "Postre simple"
+      ],
       "why": "Para comer bien sin pensar ni comparar.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-DEL-01",
@@ -22,7 +26,11 @@
       "subcategory": "Delivery resuelto",
       "name": "de bodegón 😋",
       "priceTier": "$$",
-      "includes": ["Plato principal potente", "Bebida incluida", "Postre simple"],
+      "includes": [
+        "Plato principal potente",
+        "Bebida incluida",
+        "Postre simple"
+      ],
       "why": "Para comer bien sin pensar ni comparar.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-DEL-03",
@@ -35,7 +43,11 @@
       "subcategory": "Delivery resuelto",
       "name": "Burgers + amigos",
       "priceTier": "$$",
-      "includes": ["Burger + papas", "Bebida", "Extra sorpresa"],
+      "includes": [
+        "Burger + papas",
+        "Bebida",
+        "Extra sorpresa"
+      ],
       "why": "Dopamina inmediata. Cero vueltas.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-DEL-02",
@@ -49,7 +61,11 @@
       "subcategory": "Salida simple",
       "name": "Mesa lista en 15'",
       "priceTier": "$$",
-      "includes": ["Reserva rápida", "Plato recomendado", "Cerca tuyo"],
+      "includes": [
+        "Reserva rápida",
+        "Plato recomendado",
+        "Cerca tuyo"
+      ],
       "why": "Caés y ya está.",
       "closeType": "whatsapp",
       "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Mesa%20lista%20en%2015",
@@ -62,7 +78,11 @@
       "subcategory": "Salida simple",
       "name": "Café & algo rico",
       "priceTier": "$$",
-      "includes": ["Café", "Dulce/medialuna", "Lugar tranqui"],
+      "includes": [
+        "Café",
+        "Dulce/medialuna",
+        "Lugar tranqui"
+      ],
       "why": "Plan cortito que te acomoda la cabeza.",
       "closeType": "whatsapp",
       "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Caf%C3%A9%20%26%20algo%20rico",
@@ -76,7 +96,11 @@
       "subcategory": "Plan especial",
       "name": "Cita resuelta",
       "priceTier": "$$$",
-      "includes": ["Ambiente lindo", "2 platos recomendados", "Postre para compartir"],
+      "includes": [
+        "Ambiente lindo",
+        "2 platos recomendados",
+        "Postre para compartir"
+      ],
       "why": "Para lucirte sin ser intenso.",
       "closeType": "whatsapp",
       "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Cita%20resuelta",
@@ -89,7 +113,11 @@
       "subcategory": "Plan especial",
       "name": "Brunch con premio",
       "priceTier": "$$",
-      "includes": ["Brunch completo", "Bebida", "Dulce final"],
+      "includes": [
+        "Brunch completo",
+        "Bebida",
+        "Dulce final"
+      ],
       "why": "Se siente vacaciones en 90 minutos.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-ESP-02",
@@ -103,7 +131,11 @@
       "subcategory": "Plan en casa (picada/armado)",
       "name": "Picada armada",
       "priceTier": "$$",
-      "includes": ["Tabla completa", "Panificados", "Salsas/extra"],
+      "includes": [
+        "Tabla completa",
+        "Panificados",
+        "Salsas/extra"
+      ],
       "why": "Tu casa, pero nivel bar.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-CAS-01",
@@ -116,7 +148,11 @@
       "subcategory": "Plan en casa (picada/armado)",
       "name": "Helado final feliz",
       "priceTier": "$",
-      "includes": ["1/2 kg", "Sabores curados", "Topping"],
+      "includes": [
+        "1/2 kg",
+        "Sabores curados",
+        "Topping"
+      ],
       "why": "Dopamina legal y rápida.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-GAS-CAS-02",
@@ -130,7 +166,11 @@
       "subcategory": "Spa & relax",
       "name": "Spa day reset",
       "priceTier": "$$$",
-      "includes": ["Circuito spa", "Infusión", "Zona relax"],
+      "includes": [
+        "Circuito spa",
+        "Infusión",
+        "Zona relax"
+      ],
       "why": "Volvés a ser persona en 4 horas.",
       "closeType": "whatsapp",
       "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Spa%20day%20reset",
@@ -143,7 +183,11 @@
       "subcategory": "Spa & relax",
       "name": "Masaje + pausa",
       "priceTier": "$$",
-      "includes": ["Masaje 40'", "Infusión", "Pausa guiada"],
+      "includes": [
+        "Masaje 40'",
+        "Infusión",
+        "Pausa guiada"
+      ],
       "why": "Te baja 10 cambios.",
       "closeType": "whatsapp",
       "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Masaje%20%2B%20pausa",
@@ -157,7 +201,11 @@
       "subcategory": "Naturaleza",
       "name": "Verde cerca",
       "priceTier": "$",
-      "includes": ["Spot curado", "Plan simple", "Cero logística"],
+      "includes": [
+        "Spot curado",
+        "Plan simple",
+        "Cero logística"
+      ],
       "why": "Aire y verde sin planear.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-NAT-01",
@@ -170,7 +218,11 @@
       "subcategory": "Naturaleza",
       "name": "Bike & picnic",
       "priceTier": "$$",
-      "includes": ["Recorrido", "Paradas", "Picnic sugerido"],
+      "includes": [
+        "Recorrido",
+        "Paradas",
+        "Picnic sugerido"
+      ],
       "why": "Movimiento + premio.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-NAT-02",
@@ -184,7 +236,11 @@
       "subcategory": "Urbana (hotel + paseo)",
       "name": "Hotel con pileta",
       "priceTier": "$$$",
-      "includes": ["1 noche", "Pileta/amenities", "Desayuno"],
+      "includes": [
+        "1 noche",
+        "Pileta/amenities",
+        "Desayuno"
+      ],
       "why": "Vacaciones chiquitas sin viajar.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-URB-01",
@@ -197,7 +253,11 @@
       "subcategory": "Urbana (hotel + paseo)",
       "name": "Micro city break",
       "priceTier": "$$$",
-      "includes": ["Hotel", "2 spots", "Late checkout (si aplica)"],
+      "includes": [
+        "Hotel",
+        "2 spots",
+        "Late checkout (si aplica)"
+      ],
       "why": "Te sentís turista cerca de casa.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-URB-02",
@@ -211,7 +271,11 @@
       "subcategory": "Actividad suave (aventura light)",
       "name": "Kayak tranquilo",
       "priceTier": "$$",
-      "includes": ["Actividad guiada", "Equipo", "Duración corta"],
+      "includes": [
+        "Actividad guiada",
+        "Equipo",
+        "Duración corta"
+      ],
       "why": "Aventura sin sufrir.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-ACT-01",
@@ -224,7 +288,11 @@
       "subcategory": "Actividad suave (aventura light)",
       "name": "Trekking fácil",
       "priceTier": "$",
-      "includes": ["Ruta simple", "Tiempo estimado", "Parada snack"],
+      "includes": [
+        "Ruta simple",
+        "Tiempo estimado",
+        "Parada snack"
+      ],
       "why": "Mover el cuerpo y chau.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-ESC-ACT-02",
@@ -238,7 +306,11 @@
       "subcategory": "Bolucompra dopamina",
       "name": "Gadget mini wow",
       "priceTier": "$",
-      "includes": ["Objeto útil y lindo", "Packaging copado", "Uso inmediato"],
+      "includes": [
+        "Objeto útil y lindo",
+        "Packaging copado",
+        "Uso inmediato"
+      ],
       "why": "Esa compra chiquita que te levanta.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-DOP-01",
@@ -251,7 +323,11 @@
       "subcategory": "Bolucompra dopamina",
       "name": "Desk upgrade",
       "priceTier": "$$",
-      "includes": ["Accesorio escritorio", "Orden/estética", "Fácil"],
+      "includes": [
+        "Accesorio escritorio",
+        "Orden/estética",
+        "Fácil"
+      ],
       "why": "Te cambia el día de laburo.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-DOP-02",
@@ -265,7 +341,11 @@
       "subcategory": "Regalo resuelto",
       "name": "Regalo universal",
       "priceTier": "$$",
-      "includes": ["Algo lindo", "No arriesga gusto", "Presentación"],
+      "includes": [
+        "Algo lindo",
+        "No arriesga gusto",
+        "Presentación"
+      ],
       "why": "Sirve para casi cualquiera.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-REG-01",
@@ -278,7 +358,11 @@
       "subcategory": "Regalo resuelto",
       "name": "Regalo wow chico",
       "priceTier": "$",
-      "includes": ["Pequeño pero impacta", "Presentación", "Rápido"],
+      "includes": [
+        "Pequeño pero impacta",
+        "Presentación",
+        "Rápido"
+      ],
       "why": "Quedás bien sin gastar de más.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-REG-02",
@@ -292,7 +376,11 @@
       "subcategory": "Upgrade cotidiano",
       "name": "Orden instantáneo",
       "priceTier": "$",
-      "includes": ["Organizador", "Fácil", "Impacto visual"],
+      "includes": [
+        "Organizador",
+        "Fácil",
+        "Impacto visual"
+      ],
       "why": "Orden = paz mental.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-UPG-01",
@@ -305,7 +393,11 @@
       "subcategory": "Upgrade cotidiano",
       "name": "Luz & ambiente",
       "priceTier": "$$",
-      "includes": ["Luz/lámpara", "Ambiente cálido", "Instalación simple"],
+      "includes": [
+        "Luz/lámpara",
+        "Ambiente cálido",
+        "Instalación simple"
+      ],
       "why": "Tu casa se siente distinta.",
       "closeType": "redirect",
       "closeUrl": "https://example.com/close/TIG-OBJ-UPG-02",
