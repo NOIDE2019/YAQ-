@@ -27,7 +27,27 @@
         "seguro",
         "popular"
       ]
-    },
+    }, 
+    {
+      "id": "TIG-GAS-DEL-01",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "de bodegon 😋",
+      "priceTier": "$$",
+      "includes": [
+        "Plato principal potente",
+        "Bebida incluida",
+        "Postre simple"
+      ],
+      "why": "Para comer bien sin pensar ni comparar.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-DEL-01",
+      "planB": "TIG-GAS-DEL-02",
+      "tags": [
+        "rapido",
+        "seguro",
+        "popular"
+     
     {
       "id": "TIG-GAS-DEL-02",
       "theme": "gastronomia",
