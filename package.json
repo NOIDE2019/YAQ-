@@ -1,0 +1,9 @@
+{
+  "name": "yaq",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "echo \"Run apps separately: apps/api and apps/web\""
+  }
+}

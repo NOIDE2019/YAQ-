@@ -1,0 +1,453 @@
+{
+  "city": "Tigre, Buenos Aires",
+  "currency": "ARS",
+  "tiers": [
+    "$",
+    "$$",
+    "$$$"
+  ],
+  "cards": [
+    {
+      "id": "TIG-GAS-DEL-01",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "Combo infalible",
+      "priceTier": "$$",
+      "includes": [
+        "Plato principal potente",
+        "Bebida incluida",
+        "Postre simple"
+      ],
+      "why": "Para comer bien sin pensar ni comparar.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-DEL-01",
+      "planB": "TIG-GAS-DEL-02",
+      "tags": [
+        "rapido",
+        "seguro",
+        "popular"
+      ]
+    },
+    {
+      "id": "TIG-GAS-DEL-02",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "Burgers + felicidad",
+      "priceTier": "$$",
+      "includes": [
+        "Burger + papas",
+        "Bebida",
+        "Extra sorpresa"
+      ],
+      "why": "Dopamina inmediata. Cero vueltas.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-DEL-02",
+      "planB": "TIG-GAS-CAS-01",
+      "tags": [
+        "dopamina",
+        "contundente"
+      ]
+    },
+    {
+      "id": "TIG-GAS-SAL-01",
+      "theme": "gastronomia",
+      "subcategory": "Salida simple",
+      "name": "Mesa lista en 15'",
+      "priceTier": "$$",
+      "includes": [
+        "Reserva rápida",
+        "Plato recomendado",
+        "Cerca tuyo"
+      ],
+      "why": "Caés y ya está.",
+      "closeType": "whatsapp",
+      "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Mesa%20lista%20en%2015",
+      "planB": "TIG-GAS-SAL-02",
+      "tags": [
+        "sin-estres",
+        "cercano"
+      ]
+    },
+    {
+      "id": "TIG-GAS-SAL-02",
+      "theme": "gastronomia",
+      "subcategory": "Salida simple",
+      "name": "Café & algo rico",
+      "priceTier": "$",
+      "includes": [
+        "Café",
+        "Dulce/medialuna",
+        "Lugar tranqui"
+      ],
+      "why": "Plan cortito que te acomoda la cabeza.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-SAL-02",
+      "planB": "TIG-GAS-CAS-02",
+      "tags": [
+        "tranqui",
+        "rapido"
+      ]
+    },
+    {
+      "id": "TIG-GAS-ESP-01",
+      "theme": "gastronomia",
+      "subcategory": "Plan especial",
+      "name": "Cita resuelta",
+      "priceTier": "$$$",
+      "includes": [
+        "Ambiente lindo",
+        "2 platos recomendados",
+        "Postre para compartir"
+      ],
+      "why": "Para lucirte sin ser intenso.",
+      "closeType": "whatsapp",
+      "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Cita%20resuelta",
+      "planB": "TIG-GAS-ESP-02",
+      "tags": [
+        "cita",
+        "lindo",
+        "premium"
+      ]
+    },
+    {
+      "id": "TIG-GAS-ESP-02",
+      "theme": "gastronomia",
+      "subcategory": "Plan especial",
+      "name": "Brunch con premio",
+      "priceTier": "$$",
+      "includes": [
+        "Brunch completo",
+        "Bebida",
+        "Dulce final"
+      ],
+      "why": "Se siente vacaciones en 90 minutos.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-ESP-02",
+      "planB": "TIG-GAS-SAL-01",
+      "tags": [
+        "finde",
+        "lindo"
+      ]
+    },
+    {
+      "id": "TIG-GAS-CAS-01",
+      "theme": "gastronomia",
+      "subcategory": "Plan en casa (picada/armado)",
+      "name": "Picada armada",
+      "priceTier": "$$",
+      "includes": [
+        "Tabla completa",
+        "Panificados",
+        "Salsas/extra"
+      ],
+      "why": "Tu casa, pero nivel bar.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-CAS-01",
+      "planB": "TIG-GAS-CAS-02",
+      "tags": [
+        "casa",
+        "compartir"
+      ]
+    },
+    {
+      "id": "TIG-GAS-CAS-02",
+      "theme": "gastronomia",
+      "subcategory": "Plan en casa (picada/armado)",
+      "name": "Helado final feliz",
+      "priceTier": "$",
+      "includes": [
+        "1/2 kg",
+        "Sabores curados",
+        "Topping"
+      ],
+      "why": "Dopamina legal y rápida.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-GAS-CAS-02",
+      "planB": "TIG-GAS-DEL-01",
+      "tags": [
+        "dulce",
+        "dopamina"
+      ]
+    },
+    {
+      "id": "TIG-ESC-SPA-01",
+      "theme": "escapadas",
+      "subcategory": "Spa & relax",
+      "name": "Spa day reset",
+      "priceTier": "$$$",
+      "includes": [
+        "Circuito spa",
+        "Infusión",
+        "Zona relax"
+      ],
+      "why": "Volvés a ser persona en 4 horas.",
+      "closeType": "whatsapp",
+      "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Spa%20day%20reset",
+      "planB": "TIG-ESC-SPA-02",
+      "tags": [
+        "relax",
+        "mimos"
+      ]
+    },
+    {
+      "id": "TIG-ESC-SPA-02",
+      "theme": "escapadas",
+      "subcategory": "Spa & relax",
+      "name": "Masaje + pausa",
+      "priceTier": "$$",
+      "includes": [
+        "Masaje 40'",
+        "Infusión",
+        "Pausa guiada"
+      ],
+      "why": "Te baja 10 cambios.",
+      "closeType": "whatsapp",
+      "closeUrl": "https://wa.me/5491100000000?text=YAQ%20Tigre%20Masaje%20%2B%20pausa",
+      "planB": "TIG-ESC-URB-02",
+      "tags": [
+        "bienestar",
+        "tranqui"
+      ]
+    },
+    {
+      "id": "TIG-ESC-NAT-01",
+      "theme": "escapadas",
+      "subcategory": "Naturaleza",
+      "name": "Verde cerca",
+      "priceTier": "$",
+      "includes": [
+        "Spot curado",
+        "Plan simple",
+        "Cero logística"
+      ],
+      "why": "Aire y verde sin planear.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-NAT-01",
+      "planB": "TIG-ESC-NAT-02",
+      "tags": [
+        "verde",
+        "cerca"
+      ]
+    },
+    {
+      "id": "TIG-ESC-NAT-02",
+      "theme": "escapadas",
+      "subcategory": "Naturaleza",
+      "name": "Bike & picnic",
+      "priceTier": "$$",
+      "includes": [
+        "Recorrido",
+        "Paradas",
+        "Picnic sugerido"
+      ],
+      "why": "Movimiento + premio.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-NAT-02",
+      "planB": "TIG-ESC-ACT-01",
+      "tags": [
+        "activo",
+        "dia"
+      ]
+    },
+    {
+      "id": "TIG-ESC-URB-01",
+      "theme": "escapadas",
+      "subcategory": "Urbana (hotel + paseo)",
+      "name": "Hotel con pileta",
+      "priceTier": "$$$",
+      "includes": [
+        "1 noche",
+        "Pileta/amenities",
+        "Desayuno"
+      ],
+      "why": "Vacaciones chiquitas sin viajar.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-URB-01",
+      "planB": "TIG-ESC-URB-02",
+      "tags": [
+        "premium",
+        "relax"
+      ]
+    },
+    {
+      "id": "TIG-ESC-URB-02",
+      "theme": "escapadas",
+      "subcategory": "Urbana (hotel + paseo)",
+      "name": "Micro city break",
+      "priceTier": "$$$",
+      "includes": [
+        "Hotel",
+        "2 spots",
+        "Late checkout (si aplica)"
+      ],
+      "why": "Te sentís turista cerca de casa.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-URB-02",
+      "planB": "TIG-ESC-URB-01",
+      "tags": [
+        "urbano",
+        "wow"
+      ]
+    },
+    {
+      "id": "TIG-ESC-ACT-01",
+      "theme": "escapadas",
+      "subcategory": "Actividad suave (aventura light)",
+      "name": "Kayak tranquilo",
+      "priceTier": "$$",
+      "includes": [
+        "Actividad guiada",
+        "Equipo",
+        "Duración corta"
+      ],
+      "why": "Aventura sin sufrir.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-ACT-01",
+      "planB": "TIG-ESC-ACT-02",
+      "tags": [
+        "sorpresa",
+        "dia"
+      ]
+    },
+    {
+      "id": "TIG-ESC-ACT-02",
+      "theme": "escapadas",
+      "subcategory": "Actividad suave (aventura light)",
+      "name": "Trekking fácil",
+      "priceTier": "$",
+      "includes": [
+        "Ruta simple",
+        "Tiempo estimado",
+        "Parada snack"
+      ],
+      "why": "Mover el cuerpo y chau.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-ESC-ACT-02",
+      "planB": "TIG-ESC-NAT-01",
+      "tags": [
+        "lowcost",
+        "verde"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-DOP-01",
+      "theme": "objetos",
+      "subcategory": "Bolucompra dopamina",
+      "name": "Gadget mini wow",
+      "priceTier": "$",
+      "includes": [
+        "Objeto útil y lindo",
+        "Packaging copado",
+        "Uso inmediato"
+      ],
+      "why": "Esa compra chiquita que te levanta.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-DOP-01",
+      "planB": "TIG-OBJ-DOP-02",
+      "tags": [
+        "dopamina",
+        "gadget"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-DOP-02",
+      "theme": "objetos",
+      "subcategory": "Bolucompra dopamina",
+      "name": "Desk upgrade",
+      "priceTier": "$$",
+      "includes": [
+        "Accesorio escritorio",
+        "Orden/estética",
+        "Fácil"
+      ],
+      "why": "Te cambia el día de laburo.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-DOP-02",
+      "planB": "TIG-OBJ-UPG-01",
+      "tags": [
+        "desk",
+        "util"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-REG-01",
+      "theme": "objetos",
+      "subcategory": "Regalo resuelto",
+      "name": "Regalo universal",
+      "priceTier": "$$",
+      "includes": [
+        "Algo lindo",
+        "No arriesga gusto",
+        "Presentación"
+      ],
+      "why": "Sirve para casi cualquiera.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-REG-01",
+      "planB": "TIG-OBJ-REG-02",
+      "tags": [
+        "regalo",
+        "seguro"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-REG-02",
+      "theme": "objetos",
+      "subcategory": "Regalo resuelto",
+      "name": "Regalo wow chico",
+      "priceTier": "$",
+      "includes": [
+        "Pequeño pero impacta",
+        "Presentación",
+        "Rápido"
+      ],
+      "why": "Quedás bien sin gastar de más.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-REG-02",
+      "planB": "TIG-OBJ-DOP-01",
+      "tags": [
+        "wow",
+        "barato"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-UPG-01",
+      "theme": "objetos",
+      "subcategory": "Upgrade cotidiano",
+      "name": "Orden instantáneo",
+      "priceTier": "$",
+      "includes": [
+        "Organizador",
+        "Fácil",
+        "Impacto visual"
+      ],
+      "why": "Orden = paz mental.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-UPG-01",
+      "planB": "TIG-OBJ-UPG-02",
+      "tags": [
+        "orden",
+        "hogar"
+      ]
+    },
+    {
+      "id": "TIG-OBJ-UPG-02",
+      "theme": "objetos",
+      "subcategory": "Upgrade cotidiano",
+      "name": "Luz & ambiente",
+      "priceTier": "$$",
+      "includes": [
+        "Luz/lámpara",
+        "Ambiente cálido",
+        "Instalación simple"
+      ],
+      "why": "Tu casa se siente distinta.",
+      "closeType": "redirect",
+      "closeUrl": "https://example.com/close/TIG-OBJ-UPG-02",
+      "planB": "TIG-OBJ-UPG-01",
+      "tags": [
+        "hogar",
+        "estetica"
+      ]
+    }
+  ]
+}

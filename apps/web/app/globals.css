@@ -1,0 +1,20 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: #0B1220;
+  color: #E5E7EB;
+}
+a { color: inherit; text-decoration: none; }
+.container { max-width: 980px; margin: 0 auto; padding: 24px; }
+.card { background: #0F172A; border: 1px solid #1F2937; border-radius: 18px; padding: 16px; }
+.grid { display: grid; gap: 14px; }
+.grid3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 12px; border-radius: 14px; border: 1px solid #1F2937; background: #0B1220; color: #E5E7EB; cursor: pointer; }
+.btnPrimary { background: #22C55E; border-color: #22C55E; color: #04110A; font-weight: 700; }
+.badge { display: inline-flex; padding: 4px 8px; border-radius: 999px; border: 1px solid #1F2937; color: #94A3B8; font-size: 12px; }
+.muted { color: #94A3B8; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+input, select { background: #0B1220; color: #E5E7EB; border: 1px solid #1F2937; border-radius: 12px; padding: 10px 12px; }
+label { font-size: 12px; color: #94A3B8; display:block; margin-bottom: 6px; }
