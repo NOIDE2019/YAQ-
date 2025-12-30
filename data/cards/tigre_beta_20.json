@@ -1,277 +1,250 @@
-{
-  "city": "Tigre, Buenos Aires",
-  "currency": "ARS",
-  "tiers": ["$", "$$", "$$$"],
-  "cards": [
-    {
-      "id": "TIG-GAS-DEL-01",
-      "theme": "gastronomia",
-      "subcategory": "Delivery resuelto",
-      "name": "Como lo hace mamá 😋",
-      "priceTier": "$$",
-      "includes": ["Plato principal potente", "Bebida incluida", "Postre simple"],
-      "why": "Para comer bien sin pensar ni comparar.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-DEL-01",
-      "planB": "TIG-GAS-DEL-03",
-      "tags": ["rapido", "seguro", "popular"]
-    },
-    {
-      "id": "TIG-GAS-DEL-03",
-      "theme": "gastronomia",
-      "subcategory": "Delivery resuelto",
-      "name": "de bodegón 😋",
-      "priceTier": "$$",
-      "includes": ["Plato principal potente", "Bebida incluida", "Postre simple"],
-      "why": "Para comer bien sin pensar ni comparar.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-DEL-03",
-      "planB": "TIG-GAS-DEL-01",
-      "tags": ["rapido", "seguro", "popular"]
-    },
-    {
-      "id": "TIG-GAS-DEL-02",
-      "theme": "gastronomia",
-      "subcategory": "Delivery resuelto",
-      "name": "Burgers + amigos",
-      "priceTier": "$$",
-      "includes": ["Burger + papas", "Bebida", "Extra sorpresa"],
-      "why": "Dopamina inmediata. Cero vueltas.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-DEL-02",
-      "planB": "TIG-GAS-DEL-01",
-      "tags": ["dopamina", "contundente"]
-    },
+"use client";
 
-    {
-      "id": "TIG-GAS-SAL-01",
-      "theme": "gastronomia",
-      "subcategory": "Salida simple",
-      "name": "Mesa lista en 15'",
-      "priceTier": "$$",
-      "includes": ["Reserva rápida", "Plato recomendado", "Cerca tuyo"],
-      "why": "Caés y ya está.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-SAL-01",
-      "planB": "TIG-GAS-SAL-02",
-      "tags": ["sin-estres", "cercano"]
-    },
-    {
-      "id": "TIG-GAS-SAL-02",
-      "theme": "gastronomia",
-      "subcategory": "Salida simple",
-      "name": "Café & algo rico",
-      "priceTier": "$$",
-      "includes": ["Café", "Dulce/medialuna", "Lugar tranqui"],
-      "why": "Plan cortito que te acomoda la cabeza.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-SAL-02",
-      "planB": "TIG-GAS-SAL-01",
-      "tags": ["tranqui", "rapido"]
-    },
+import { useMemo, useState } from "react";
 
-    {
-      "id": "TIG-GAS-ESP-01",
-      "theme": "gastronomia",
-      "subcategory": "Plan especial",
-      "name": "Cita resuelta",
-      "priceTier": "$$$",
-      "includes": ["Ambiente lindo", "2 platos recomendados", "Postre para compartir"],
-      "why": "Para lucirte sin ser intenso.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-ESP-01",
-      "planB": "TIG-GAS-ESP-02",
-      "tags": ["cita", "lindo", "premium"]
-    },
-    {
-      "id": "TIG-GAS-ESP-02",
-      "theme": "gastronomia",
-      "subcategory": "Plan especial",
-      "name": "Brunch con premio",
-      "priceTier": "$$",
-      "includes": ["Brunch completo", "Bebida", "Dulce final"],
-      "why": "Se siente vacaciones en 90 minutos.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-ESP-02",
-      "planB": "TIG-GAS-ESP-01",
-      "tags": ["finde", "lindo"]
-    },
+// ✅ IMPORTA TU JSON DEL REPO
+// Ruta desde: apps/web/app/page.tsx  ->  ../../../data/cards/tigre_beta_20.json
+// Si Vercel te llegara a quejar por importar fuera del root dir,
+// mové el JSON a: apps/web/data/cards/tigre_beta_20.json
+// y cambiá esta línea a: import DATA from "../data/cards/tigre_beta_20.json";
+import DATA from "../../../data/cards/tigre_beta_20.json";
 
-    {
-      "id": "TIG-GAS-CAS-01",
-      "theme": "gastronomia",
-      "subcategory": "Plan en casa (picada/armado)",
-      "name": "Picada armada",
-      "priceTier": "$$",
-      "includes": ["Tabla completa", "Panificados", "Salsas/extra"],
-      "why": "Tu casa, pero nivel bar.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-CAS-01",
-      "planB": "TIG-GAS-CAS-02",
-      "tags": ["casa", "compartir"]
-    },
-    {
-      "id": "TIG-GAS-CAS-02",
-      "theme": "gastronomia",
-      "subcategory": "Plan en casa (picada/armado)",
-      "name": "Helado final feliz",
-      "priceTier": "$",
-      "includes": ["1/2 kg", "Sabores curados", "Topping"],
-      "why": "Dopamina legal y rápida.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-GAS-CAS-02",
-      "planB": "TIG-GAS-CAS-01",
-      "tags": ["dulce", "dopamina"]
-    },
+type PriceTier = "$" | "$$" | "$$$";
 
-    {
-      "id": "TIG-ESC-SPA-01",
-      "theme": "escapadas",
-      "subcategory": "Spa & relax",
-      "name": "Spa day reset",
-      "priceTier": "$$$",
-      "includes": ["Circuito spa", "Infusión", "Zona relax"],
-      "why": "Volvés a ser persona en 4 horas.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-SPA-01",
-      "planB": "TIG-ESC-SPA-02",
-      "tags": ["relax", "mimos"]
-    },
-    {
-      "id": "TIG-ESC-SPA-02",
-      "theme": "escapadas",
-      "subcategory": "Spa & relax",
-      "name": "Masaje + pausa",
-      "priceTier": "$$",
-      "includes": ["Masaje 40'", "Infusión", "Pausa guiada"],
-      "why": "Te baja 10 cambios.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-SPA-02",
-      "planB": "TIG-ESC-SPA-01",
-      "tags": ["bienestar", "tranqui"]
-    },
+type Card = {
+  id: string;
+  theme: string;
+  subcategory: string;
+  name: string;
+  priceTier: PriceTier;
+  includes: string[];
+  why: string;
+  closeType: "redirect" | "whatsapp";
+  closeUrl: string;
+  planB: string;
+  tags?: string[];
+};
 
-    {
-      "id": "TIG-ESC-NAT-01",
-      "theme": "escapadas",
-      "subcategory": "Naturaleza",
-      "name": "Verde cerca",
-      "priceTier": "$",
-      "includes": ["Spot curado", "Plan simple", "Cero logística"],
-      "why": "Aire y verde sin planear.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-NAT-01",
-      "planB": "TIG-ESC-NAT-02",
-      "tags": ["verde", "cerca"]
-    },
-    {
-      "id": "TIG-ESC-NAT-02",
-      "theme": "escapadas",
-      "subcategory": "Naturaleza",
-      "name": "Bike & picnic",
-      "priceTier": "$$",
-      "includes": ["Recorrido", "Paradas", "Picnic sugerido"],
-      "why": "Movimiento + premio.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-NAT-02",
-      "planB": "TIG-ESC-NAT-01",
-      "tags": ["activo", "dia"]
-    },
+type DataSet = {
+  city: string;
+  currency: string;
+  tiers: PriceTier[];
+  cards: Card[];
+};
 
-    {
-      "id": "TIG-ESC-URB-01",
-      "theme": "escapadas",
-      "subcategory": "Urbana (hotel + paseo)",
-      "name": "Hotel con pileta",
-      "priceTier": "$$$",
-      "includes": ["1 noche", "Pileta/amenities", "Desayuno"],
-      "why": "Vacaciones chiquitas sin viajar.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-URB-01",
-      "planB": "TIG-ESC-URB-02",
-      "tags": ["premium", "relax"]
-    },
-    {
-      "id": "TIG-ESC-URB-02",
-      "theme": "escapadas",
-      "subcategory": "Urbana (hotel + paseo)",
-      "name": "Micro city break",
-      "priceTier": "$$$",
-      "includes": ["Hotel", "2 spots", "Late checkout (si aplica)"],
-      "why": "Te sentís turista cerca de casa.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-URB-02",
-      "planB": "TIG-ESC-URB-01",
-      "tags": ["urbano", "wow"]
-    },
+const THEMES = [
+  { key: "gastronomia", label: "Gastronomía" },
+  { key: "escapadas", label: "Escapadas cerca" },
+  { key: "objetos", label: "Objetos (bolucompras)" }
+] as const;
 
-    {
-      "id": "TIG-ESC-ACT-01",
-      "theme": "escapadas",
-      "subcategory": "Actividad suave (aventura light)",
-      "name": "Kayak tranquilo",
-      "priceTier": "$$",
-      "includes": ["Actividad guiada", "Equipo", "Duración corta"],
-      "why": "Aventura sin sufrir.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-ACT-01",
-      "planB": "TIG-ESC-ACT-02",
-      "tags": ["sorpresa", "dia"]
-    },
-    {
-      "id": "TIG-ESC-ACT-02",
-      "theme": "escapadas",
-      "subcategory": "Actividad suave (aventura light)",
-      "name": "Trekking fácil",
-      "priceTier": "$",
-      "includes": ["Ruta simple", "Tiempo estimado", "Parada snack"],
-      "why": "Mover el cuerpo y chau.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-ESC-ACT-02",
-      "planB": "TIG-ESC-ACT-01",
-      "tags": ["lowcost", "verde"]
-    },
+const SUBCATS: Record<string, string[]> = {
+  gastronomia: ["Delivery resuelto", "Salida simple", "Plan especial", "Plan en casa (picada/armado)"],
+  escapadas: ["Spa & relax", "Naturaleza", "Urbana (hotel + paseo)", "Actividad suave (aventura light)"],
+  objetos: ["Bolucompra dopamina", "Regalo resuelto", "Upgrade cotidiano", "Hobby & auto-regalo"]
+};
 
-    {
-      "id": "TIG-OBJ-DOP-01",
-      "theme": "objetos",
-      "subcategory": "Bolucompra dopamina",
-      "name": "Gadget mini wow",
-      "priceTier": "$",
-      "includes": ["Objeto útil y lindo", "Packaging copado", "Uso inmediato"],
-      "why": "Esa compra chiquita que te levanta.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-OBJ-DOP-01",
-      "planB": "TIG-OBJ-REG-01",
-      "tags": ["dopamina", "gadget"]
-    },
+const TIERS: PriceTier[] = ["$", "$$", "$$$"];
 
-    {
-      "id": "TIG-OBJ-REG-01",
-      "theme": "objetos",
-      "subcategory": "Regalo resuelto",
-      "name": "Regalo universal",
-      "priceTier": "$$",
-      "includes": ["Algo lindo", "No arriesga gusto", "Presentación"],
-      "why": "Sirve para casi cualquiera.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-OBJ-REG-01",
-      "planB": "TIG-OBJ-UPG-01",
-      "tags": ["regalo", "seguro"]
-    },
+// ---------- helpers: random con seed (determinístico) ----------
+function mulberry32(seed: number) {
+  let t = seed >>> 0;
+  return function () {
+    t += 0x6D2B79F5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+}
 
-    {
-      "id": "TIG-OBJ-UPG-01",
-      "theme": "objetos",
-      "subcategory": "Upgrade cotidiano",
-      "name": "Orden instantáneo",
-      "priceTier": "$",
-      "includes": ["Organizador", "Fácil", "Impacto visual"],
-      "why": "Orden = paz mental.",
-      "closeType": "redirect",
-      "closeUrl": "/c/TIG-OBJ-UPG-01",
-      "planB": "TIG-OBJ-DOP-01",
-      "tags": ["orden", "hogar"]
-    }
-  ]
+function pickN<T>(arr: T[], n: number, seed: number) {
+  const rand = mulberry32(seed);
+  const copy = [...arr];
+
+  // Fisher–Yates shuffle con seed
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+
+  return copy.slice(0, n);
+}
+
+// ---------- página ----------
+export default function Page() {
+  const dataset = DATA as unknown as DataSet;
+
+  const [theme, setTheme] = useState<(typeof THEMES)[number]["key"]>("gastronomia");
+  const [subcategory, setSubcategory] = useState<string>(SUBCATS["gastronomia"][0]);
+  const [tier, setTier] = useState<PriceTier>("$$");
+
+  const [seed, setSeed] = useState<number>(1);
+  const [draws, setDraws] = useState<number>(0);
+  const [cards, setCards] = useState<Card[]>([]);
+
+  const canReroll = draws < 1;
+
+  const filtered = useMemo(() => {
+    return dataset.cards.filter((c) => {
+      return (
+        c.theme === theme &&
+        c.subcategory === subcategory &&
+        c.priceTier === tier
+      );
+    });
+  }, [dataset.cards, theme, subcategory, tier]);
+
+  function start() {
+    setDraws(0);
+    const picked = pickN(filtered, 3, seed);
+    setCards(picked);
+  }
+
+  function reroll() {
+    if (!canReroll) return;
+    const nextSeed = seed + 1;
+    setSeed(nextSeed);
+    setDraws((d) => d + 1);
+    const picked = pickN(filtered, 3, nextSeed);
+    setCards(picked);
+  }
+
+  function choose(card: Card) {
+    // Si closeUrl es "/c/..." abre en tu dominio. Si es https://... abre externo.
+    window.open(card.closeUrl, "_blank", "noopener,noreferrer");
+  }
+
+  return (
+    <main className="grid" style={{ gap: 18 }}>
+      <header className="grid" style={{ gap: 6 }}>
+        <div className="row" style={{ justifyContent: "space-between", alignItems: "center" }}>
+          <h1 style={{ margin: 0 }}>YAQ — Tigre Beta</h1>
+          <span className="badge">3 cartas • 30–60s</span>
+        </div>
+        <p className="muted" style={{ margin: 0 }}>
+          Elegí tema, subcategoría y rango. Te damos 3 opciones. Una sola re-tirada.
+        </p>
+      </header>
+
+      <section className="card grid" style={{ gap: 12 }}>
+        <div className="row" style={{ flexWrap: "wrap", gap: 12 }}>
+          <div style={{ minWidth: 220 }}>
+            <label>Tema</label>
+            <select
+              value={theme}
+              onChange={(e) => {
+                const t = e.target.value as (typeof THEMES)[number]["key"];
+                setTheme(t);
+                setSubcategory(SUBCATS[t][0]);
+                setCards([]);
+                setDraws(0);
+              }}
+            >
+              {THEMES.map((t) => (
+                <option key={t.key} value={t.key}>
+                  {t.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div style={{ minWidth: 260 }}>
+            <label>Subcategoría</label>
+            <select
+              value={subcategory}
+              onChange={(e) => {
+                setSubcategory(e.target.value);
+                setCards([]);
+                setDraws(0);
+              }}
+            >
+              {SUBCATS[theme].map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div style={{ minWidth: 160 }}>
+            <label>Rango</label>
+            <select
+              value={tier}
+              onChange={(e) => {
+                setTier(e.target.value as PriceTier);
+                setCards([]);
+                setDraws(0);
+              }}
+            >
+              {TIERS.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <div className="row" style={{ gap: 10 }}>
+          <button className="btn btnPrimary" onClick={start} disabled={filtered.length === 0}>
+            Tirar 3 cartas
+          </button>
+          <button className="btn" onClick={reroll} disabled={!cards.length || !canReroll || filtered.length === 0}>
+            Re-tirar (1)
+          </button>
+
+          {filtered.length === 0 && (
+            <span className="muted" style={{ fontSize: 12 }}>
+              No hay cartas para esa combinación (theme + subcategoría + rango). Revisá tu JSON.
+            </span>
+          )}
+        </div>
+      </section>
+
+      {cards.length > 0 && (
+        <section className="grid grid3">
+          {cards.map((c) => (
+            <div key={c.id} className="card grid" style={{ gap: 10 }}>
+              <div className="row" style={{ justifyContent: "space-between", alignItems: "center" }}>
+                <span className="badge">{c.priceTier}</span>
+                <span className="muted" style={{ fontSize: 12 }}>
+                  {c.id}
+                </span>
+              </div>
+
+              <h3 style={{ margin: "2px 0 0 0" }}>{c.name}</h3>
+              <div className="muted" style={{ fontSize: 13 }}>
+                {c.why}
+              </div>
+
+              <div style={{ fontSize: 13 }}>
+                <b>Incluye:</b>
+                <ul style={{ margin: "8px 0 0 18px", padding: 0 }}>
+                  {c.includes.map((it, i) => (
+                    <li key={i} className="muted">
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="row" style={{ marginTop: 6 }}>
+                <button className="btn btnPrimary" onClick={() => choose(c)}>
+                  Elegir y cerrar
+                </button>
+              </div>
+
+              <div className="muted" style={{ fontSize: 12 }}>
+                Plan B: {c.planB}
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <footer className="muted" style={{ marginTop: 10, fontSize: 12 }}>
+        ADN YAQ: máximo 3 cartas por tirada. Si querés “ver más”, hay que mejorar la curaduría.
+      </footer>
+    </main>
+  );
 }
