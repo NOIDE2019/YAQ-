@@ -1,0 +1,85 @@
+{
+  "city": "Tigre, Buenos Aires",
+  "currency": "ARS",
+  "tiers": ["$", "$$", "$$$"],
+  "cards": [
+    {
+      "id": "TIG-GAS-DEL-01",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "Combo infalible",
+      "priceTier": "$$",
+      "includes": ["Plato principal potente", "Bebida incluida", "Postre simple"],
+      "why": "Para comer bien sin pensar ni comparar.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Combo+infalible+Tigre",
+      "planB": "TIG-GAS-DEL-02",
+      "tags": ["rapido", "seguro", "popular"]
+    },
+    {
+      "id": "TIG-GAS-DEL-02",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "Pizza + bebida (resuelto)",
+      "priceTier": "$$",
+      "includes": ["Pizza grande", "Bebida 1.5L", "Algo dulce"],
+      "why": "Plan fácil, cero vueltas, cae bien siempre.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Pizza+delivery+Tigre",
+      "planB": "TIG-GAS-DEL-03",
+      "tags": ["clasico", "rapido", "rendidor"]
+    },
+    {
+      "id": "TIG-GAS-DEL-03",
+      "theme": "gastronomia",
+      "subcategory": "Delivery resuelto",
+      "name": "Sushi simple (sin riesgo)",
+      "priceTier": "$$",
+      "includes": ["Tabla clásica", "Salsa", "Galletita de la fortuna"],
+      "why": "Te sentís bien y comés rico.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Sushi+delivery+Tigre",
+      "planB": "TIG-GAS-DEL-01",
+      "tags": ["ligero", "seguro", "rico"]
+    },
+    {
+      "id": "TIG-GAS-SAL-01",
+      "theme": "gastronomia",
+      "subcategory": "Salida simple",
+      "name": "Hamburguesa + charla",
+      "priceTier": "$",
+      "includes": ["Hamburguesa", "Bebida", "Charla tranqui"],
+      "why": "Súper directo: comer algo y listo.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Hamburguesa+Tigre+Buenos+Aires",
+      "planB": "TIG-GAS-SAL-02",
+      "tags": ["barato", "simple", "popular"]
+    },
+    {
+      "id": "TIG-GAS-SAL-02",
+      "theme": "gastronomia",
+      "subcategory": "Salida simple",
+      "name": "Café + medialunas",
+      "priceTier": "$",
+      "includes": ["Café", "2 medialunas", "Agua"],
+      "why": "Plan corto y efectivo.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Cafe+medialunas+Tigre",
+      "planB": "TIG-GAS-SAL-03",
+      "tags": ["rapido", "clasico", "barato"]
+    },
+    {
+      "id": "TIG-GAS-SAL-03",
+      "theme": "gastronomia",
+      "subcategory": "Salida simple",
+      "name": "Empanadas + gaseosa",
+      "priceTier": "$",
+      "includes": ["6 empanadas", "Gaseosa", "Salsa picante"],
+      "why": "Rinde, es fácil y no falla.",
+      "closeType": "redirect",
+      "closeUrl": "https://www.google.com/search?q=Empanadas+Tigre",
+      "planB": "TIG-GAS-SAL-01",
+      "tags": ["rendidor", "simple", "rapido"]
+    }
+  ]
+}
