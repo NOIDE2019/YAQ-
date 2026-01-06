@@ -1,52 +1,123 @@
-# Y AHORA QUÉ — GitHub Starter (Tigre Beta)
+# YAQ — Ya Ahora Qué
 
-Este repo es un **starter** para ejecutar YAQ como producto real con:
-- **MVP de 3 cartas** (Gastronomía / Escapadas / Objetos)
-- **Sets por ciudad** (arrancamos con Tigre, Buenos Aires)
-- **Web app** (Next.js) + **API** (Express) + **data seeds**
-- Documentación en `/docs` para no perder el ADN del producto
+YAQ es una herramienta de **toma de decisiones rápidas**.
 
-> Objetivo del MVP: que el usuario **decida en 30–60s** con 3 cartas y cierre (o 1 re-tirada máximo).
+En menos de un minuto, a partir de pocas elecciones simples, devuelve **3 opciones curadas y accionables** para ayudarte a decidir sin pensar de más.
 
-## Estructura
-- `apps/web` — Front (Next.js, App Router)
-- `apps/api` — API (Express)
-- `packages/shared` — Tipos, utilidades, tokens (design system)
-- `data/cards` — Sets de cartas (JSON) por ciudad/etapa
-- `docs` — Producto, operación, métricas, roadmap
-- `scripts` — utilidades (validación de cartas, etc)
+No busca explorar infinitamente.  
+Busca decidir.
 
-## Quickstart (local)
-Requisitos: Node 18+
+---
 
-### 1) API
-```bash
-cd apps/api
-npm install
-npm run dev
-```
-API queda en `http://localhost:4000`
+## 🧠 ¿Qué problema resuelve?
 
-### 2) Web
-En otra terminal:
-```bash
-cd apps/web
-npm install
-npm run dev
-```
-Web queda en `http://localhost:3000`
+Tomar decisiones cotidianas cansa más de lo que parece.
 
-## Qué vas a ver
-- Onboarding mínimo
-- Selección: Tema → Subcategoría → **3 cartas**
-- Botón de **Re-tirar** (solo 1 vez)
-- Botón de **Cerrar** (simulado por ahora)
+Elegir qué hacer, qué comer, a dónde ir o cómo avanzar suele implicar:
+- demasiadas opciones
+- demasiada información
+- demasiada fricción mental
 
-## Próximos pasos recomendados
-1. Reemplazar cartas plantilla por **partners reales de Tigre**
-2. Activar tracking (UTM/afiliado) en `closeUrl`
-3. Implementar eventos (tiempo a decisión, pick-rate, click-to-close)
-4. Soporte + Garantía YAQ (Plan B obligatorio)
+YAQ reduce ese ruido.
 
-## Licencia
-MIT — ver `LICENSE`
+No te da “todo lo posible”.  
+Te da **lo suficiente para elegir**.
+
+---
+
+## ⚡ Cómo funciona
+
+1. Elegís algunas variables simples  
+   (estado de ánimo, intención, presupuesto)
+
+2. Tocás **“Mostrame opciones”**
+
+3. YAQ devuelve **3 cartas**
+   - opciones reales
+   - curadas
+   - comparables entre sí
+
+4. Elegís una  
+   → **decisión tomada**
+
+Sin login.  
+Sin historial.  
+Sin vueltas.
+
+---
+
+## 🎯 Principios del producto
+
+- **Rapidez > profundidad**  
+- **Curaduría > cantidad**  
+- **Decisión > exploración infinita**
+
+YAQ no intenta ser inteligente.  
+Intenta ser útil **rápido**.
+
+---
+
+## 🚧 Estado del proyecto
+
+YAQ está en **versión v1 (MVP)**.
+
+- Flujo único
+- Sin usuarios
+- Sin pagos
+- Sin IA
+- Sin features extra
+
+Esta versión está **intencionalmente limitada** para validar:
+> ¿Se entiende?  
+> ¿Se usa?  
+> ¿Ayuda a decidir?
+
+---
+
+## 🌐 Demo online
+
+👉 https://yaq-web.vercel.app
+
+Para probarlo:
+- tocá los botones
+- seguí el flujo
+- elegí una opción
+
+No hace falta entender “cómo funciona”.  
+Solo usarlo.
+
+---
+
+## 🧪 Feedback buscado
+
+Si lo probás, interesa saber:
+
+- ¿Qué entendés que hace YAQ?
+- ¿Qué te confunde?
+- ¿En qué momento dudarías?
+
+Feedback corto, honesto, sin contexto previo.
+
+---
+
+## 🛠️ Nota técnica (breve)
+
+El proyecto está construido con:
+- Next.js
+- TypeScript
+- Monorepo
+
+La implementación es secundaria.  
+El foco está en el **producto y el flujo de decisión**.
+
+---
+
+## 📌 YAQ v1
+
+YAQ v1 no busca escalar.  
+Busca **cerrar una idea**.
+
+Cerrar para mostrar.  
+Mostrar para escuchar.  
+Escuchar antes de iterar.
+
